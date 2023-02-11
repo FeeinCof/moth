@@ -6,13 +6,13 @@ import {
   Footer,
 } from "@/src/components";
 import useStorage from "@/src/hooks/useSessionStorage/useSessionStorage";
-const { getItem, setItem } = useStorage();
 
 interface ReactNode {
   children: React.ReactNode;
 }
 
 export default function DefaultLayout({ children }: ReactNode) {
+  const { getItem, setItem } = useStorage();
   const [ageConfirmed, setAgeConfirmed] = useState(false);
   useEffect(() => {
     setAgeConfirmed(
