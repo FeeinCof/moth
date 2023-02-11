@@ -1,13 +1,23 @@
-import { ReactElement } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "./collections.module.css";
 import DefaultLayout from "@/src/layouts/DefaultLayout/DefaultLayout";
-import { NavCollections } from "@/src/components";
+import { NavCollections, PackGroup } from "@/src/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const Collections = () => {
+  const [packs, setPacks] = useState([]);
+  useEffect(() => {
+    fetch("/api/collections")
+      .then((response) => response.json())
+      .then((data) => setPacks(data))
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }, []);
+
   return (
     <>
       <Head>
@@ -24,6 +34,10 @@ const Collections = () => {
             <h1>cocktails</h1>
             <h1>in a can</h1>
           </div>
+        </div>
+        <div className={styles.pack_group}>
+          {packs &&
+            packs.map((pack, index) => <PackGroup data={pack} key={index} />)}
         </div>
       </main>
     </>
