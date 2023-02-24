@@ -23,7 +23,7 @@ const PackItem = ({ props }: { props: any }) => {
         <div className={styles.body}>
           <span className={styles.name}>Margarita</span>
           <span className={styles.price}>
-            <sup>from </sup>
+            <span>from </span>
             £20
           </span>
         </div>

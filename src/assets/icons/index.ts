@@ -22,3 +22,5 @@ export { default as glass } from "./glass.svg";
 export { default as truck } from "./truck.svg";
 export { default as earth } from "./earth.svg";
 export { default as wtf } from "./wtf.svg";
+export { default as gift } from "./gift.svg";
+export { default as mail } from "./mail.svg";

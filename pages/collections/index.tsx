@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "./collections.module.css";
 import DefaultLayout from "@/src/layouts/DefaultLayout/DefaultLayout";
-import { NavCollections, PackGroup } from "@/src/components";
+import { GiftsBanner, NavCollections, PackGroup } from "@/src/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,8 +37,14 @@ const Collections = () => {
         </div>
         <div className={styles.pack_group}>
           {packs &&
-            packs.map((pack, index) => <PackGroup data={pack} key={index} />)}
+            packs.map((pack, index) => {
+              if (index == packs.length - 1) {
+                return <PackGroup data={pack} key={index} lineBottom={false} />;
+              }
+              return <PackGroup data={pack} key={index} />;
+            })}
         </div>
+        <GiftsBanner />
       </main>
     </>
   );

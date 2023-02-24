@@ -1,0 +1,135 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url(../../../public/images/MOTH_Gifts_Banner_c28719f1-c270-4ccb-a1df-248c8de2ce18.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.banner_content {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: black;
+  max-width: 85%;
+  color: white;
+  padding: 2rem 2rem 4rem 2rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.banner_content h1 {
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 2.5rem;
+}
+
+.banner_content p {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  color: #f8f8ef90;
+}
+
+.gifting_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0rem;
+}
+
+.gifting_title {
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gifting_title h1 {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 2rem;
+}
+
+.gifting_content {
+  display: flex;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.gifting_item {
+  width: 83%;
+  flex: none;
+  max-width: 40rem;
+  scroll-snap-align: start;
+  padding-left: 2rem;
+}
+
+.gifting_item h3 {
+  font-weight: normal;
+  margin: 1rem 0;
+}
+
+.gifting_item p {
+  letter-spacing: -0.1px;
+  color: #00000090;
+  line-height: 1rem;
+}
+
+@media screen and (min-width: 752px) {
+  .banner_content {
+    max-width: 550px;
+    top: unset;
+    bottom: 100px;
+  }
+  .gifting_container {
+    padding: 4rem 2rem;
+  }
+  .gifting_title {
+    padding: 0;
+  }
+  .gifting_content {
+    width: 100%;
+    display: flex;
+    gap: 0;
+    flex-direction: row;
+  }
+  .gifting_item {
+    flex: auto;
+    width: 33.33%;
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+  .gifting_item h3 {
+    width: 100%;
+    font-size: 30px;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gifting_container {
+    flex-direction: row;
+  }
+  .gifting_title {
+    width: 30%;
+  }
+
+  .gifting_item h3 {
+    width: 140px;
+  }
+
+  .gifting_content {
+    width: 85%;
+    gap: 2rem;
+    overflow: hidden;
+  }
+
+  .gifting_item {
+    width: 25%;
+    flex: auto;
+    margin-left: 2rem;
+  }
+}

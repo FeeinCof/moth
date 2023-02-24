@@ -135,6 +135,9 @@
   .inner {
     padding: 20px 0 !important;
   }
+  .moth {
+    width: 100%;
+  }
   .footer_button button {
     display: none;
   }

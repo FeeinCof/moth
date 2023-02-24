@@ -23,7 +23,6 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: PolysansNew, sans-serif;
-  overflow-y: overlay;
   background-color: var(--bg-color);
 }
 
@@ -54,4 +53,8 @@ p {
   .t-30 {
     font-size: 20px;
   }
+}
+
+.border-bottom {
+  border-bottom: #000000 solid 1px;
 }

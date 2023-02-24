@@ -29,13 +29,13 @@ export default function DefaultLayout({ children }: ReactNode) {
   };
   return (
     <>
-      <ChatBox />
       <Header />
       {ageConfirmed ? (
         children
       ) : (
         <AgeGateConfirmationBox onClick={ageConfirming} />
       )}
+      <ChatBox />
       <Footer />
     </>
   );

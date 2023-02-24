@@ -5,3 +5,6 @@ export { default as AgeGateConfirmationBox } from "./AgeGateConfirmationBox/AgeG
 export { default as NavCollections } from "./NavCollections/NavCollections";
 export { default as PackGroup } from "./PackGroup/PackGroup";
 export { default as PackItem } from "./PackItem/PackItem";
+export { default as GiftsBanner } from "./GiftsBanner/GiftsBanner";
+export { default as SinglePacksBanner } from "./SinglePacksBanner/SinglePacksBanner";
+export { default as Banner } from "./Banner/Banner";

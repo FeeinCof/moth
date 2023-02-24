@@ -33,7 +33,7 @@
 }
 
 .chat_container {
-  z-index: 2;
+  z-index: 999;
   position: fixed;
   bottom: 92px;
   right: 22px;

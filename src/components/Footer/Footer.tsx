@@ -51,6 +51,9 @@ export default function Footer() {
             </defs>
           </svg>
         </div>
+        {/* <Link href="/" className={styles.footer_button_mobile}>
+          <button>JOIN THE COMUNITY & GET 20% OFF </button>
+        </Link> */}
         <div className={`${styles.inner_p_20_40} ${styles.inner}`}>
           <div className={styles.footer_input}>
             <input type="text" placeholder="EMAIL ADDRESS" />

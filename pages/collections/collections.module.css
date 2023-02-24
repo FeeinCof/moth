@@ -26,6 +26,12 @@
   line-height: 40px;
 }
 
+.pack_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (min-width: 752px) {
   .banner {
     background-image: url(../../public/images/banner_image_desktop_1.jpg);
