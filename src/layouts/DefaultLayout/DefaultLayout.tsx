@@ -6,7 +6,7 @@ import {
   Footer,
 } from "@/src/components";
 import useStorage from "@/src/hooks/useSessionStorage/useSessionStorage";
-
+// import styles from "./DefaultLayout.module.css"; //amusing yet
 interface ReactNode {
   children: React.ReactNode;
 }
@@ -30,6 +30,9 @@ export default function DefaultLayout({ children }: ReactNode) {
   return (
     <>
       <Header />
+      <br />
+      <br />
+      <br />
       {ageConfirmed ? (
         children
       ) : (

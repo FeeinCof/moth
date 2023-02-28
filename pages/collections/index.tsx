@@ -17,7 +17,6 @@ const Collections = () => {
         console.error("Error:", error);
       });
   }, []);
-
   return (
     <>
       <Head>

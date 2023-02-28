@@ -24,3 +24,8 @@ export { default as earth } from "./earth.svg";
 export { default as wtf } from "./wtf.svg";
 export { default as gift } from "./gift.svg";
 export { default as mail } from "./mail.svg";
+export { default as truck_black } from "./truck_black.svg";
+export { default as clock } from "./clock.svg";
+export { default as vegan } from "./vegan.svg";
+export { default as recycle } from "./recycle.svg";
+export { default as plus } from "./plus.svg";

@@ -1,0 +1,48 @@
+.popper {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #000;
+}
+
+.popper_isopen {
+  padding-bottom: 3rem;
+}
+
+.title {
+  cursor: pointer;
+  position: relative;
+  padding: 20px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.title p {
+  transition: 0.3s all ease-in-out;
+}
+
+.title:hover p {
+  opacity: 0.6;
+}
+
+.toggle_icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+}
+
+@media screen and (min-width: 992px) {
+  .popper {
+    padding-left: 10%;
+  }
+  .toggle_icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10%;
+    right: unset;
+    margin: auto 0;
+  }
+}

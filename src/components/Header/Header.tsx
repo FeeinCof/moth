@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useDetectScroll } from "@smakss/react-scroll-direction";
@@ -19,7 +19,7 @@ export default function Header() {
     setNavShow(!isNavShow);
   };
   const [scrollDir] = useDetectScroll({});
-  useLayoutEffect(() => {
+  useEffect(() => {
     const scrollHandle = () => {
       if (window.scrollY > 68.2) {
         scrollDir == "up" ? setHeaderFixed(true) : setHeaderFixed(false);
