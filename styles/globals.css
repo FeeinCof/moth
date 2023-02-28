@@ -44,19 +44,25 @@ p {
 }
 
 .t-30 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: normal;
-  margin: 20px 0 40px;
+  color: black;
 }
 
-@media screen and (max-width: 1201px) {
+@media screen and (min-width: 772px) {
   .t-30 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
 .border-bottom {
   border-bottom: #000000 solid 1px;
+}
+
+.t-40 {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 2rem;
 }
 
 main {

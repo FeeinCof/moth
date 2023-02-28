@@ -1,7 +1,5 @@
-import Image from "next/image";
 import styles from "./PackGroup.module.css";
 import { PackItem } from "@/src/components";
-import giftsImage from "@/public/images/MOTH_Gifts_Banner_c28719f1-c270-4ccb-a1df-248c8de2ce18.png";
 const PackGroup = ({
   data,
   lineBottom = true,

@@ -18,6 +18,7 @@
 }
 
 .title p {
+  width: 80%;
   transition: 0.3s all ease-in-out;
 }
 

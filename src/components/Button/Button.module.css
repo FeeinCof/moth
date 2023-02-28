@@ -31,3 +31,8 @@
 .button:hover .button_after {
   top: 0;
 }
+
+.small {
+  width: fit-content;
+  padding: 10px 20px;
+}

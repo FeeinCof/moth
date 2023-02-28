@@ -34,7 +34,7 @@
 
 .size li {
   padding: 10px 0;
-  width: 20px;
+  width: 20px !important;
   text-align: center;
   margin: 0 2px;
   font-size: 12px;
